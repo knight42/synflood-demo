@@ -104,10 +104,10 @@ int main(int argc, char *argv[]) {
     in_addr_t daddr = 0;
 
     if (argc > 1) {
-        printf("Dest addr: %s\n", argv[1]);
+        printf("Dest addr: %s:80\n", argv[1]);
         daddr = inet_addr(argv[1]);
     } else {
-        puts("Dest addr: 202.38.64.1");
+        puts("Dest addr: 202.38.64.1:80");
         daddr = inet_addr("202.38.64.1");
     }
 
